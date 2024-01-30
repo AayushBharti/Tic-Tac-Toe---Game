@@ -6,7 +6,7 @@
 }
 
 .wrapper{
-    background-image: url("./assets/gradient-bg.jpg");
+    background-image: url("./assets/grad.jpg");
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -21,7 +21,6 @@
     justify-content: space-around;
     align-items: center;
 }
-
 
 .game-info{
     color:white;
