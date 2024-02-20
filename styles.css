@@ -7,9 +7,21 @@
 
 .wrapper{
     background-image: url("./assets/grad.jpg");
-    background-position: center;
-    background-size: cover;
+    background-position:center;
+    /* background-position: bottom right; */
+    /* background-size: 300%; */
+    background-repeat: no-repeat;
     height: 100vh;
+    transition: background-position 0.8s;
+}
+
+.X{
+    background-position: bottom left;
+    background-size: 200%;
+}
+.O{
+    background-position: bottom right;
+    background-size: 200%;
 }
 
 .outerDiv{
@@ -29,6 +41,7 @@
     border: 1px solid rgba(255, 255, 255, 0.25);
     padding: 0.5rem 3rem;
     text-align:center;
+    backdrop-filter: blur(10px);
 }
 
 .tic-tac-toe{
@@ -76,10 +89,12 @@
     border: 1px solid rgba(255, 255, 255, 0.25);
     padding: 0.5rem 2rem;
     opacity: 0;
+    pointer-events: none;
 }
 
 .btn.active{
     opacity: 100;
+    pointer-events: initial;
     cursor:pointer;
 }
 
